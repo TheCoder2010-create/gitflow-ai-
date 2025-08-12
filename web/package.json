@@ -1,0 +1,26 @@
+{
+  "name": "gitflow-ai-landing",
+  "version": "1.0.0",
+  "description": "GitFlow AI - Intelligent Git Workflow Assistant Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "python server.py",
+    "dev": "python server.py",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "git",
+    "ai",
+    "workflow",
+    "assistant",
+    "hackathon",
+    "openai"
+  ],
+  "author": "GitFlow AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/gitflow-ai"
+  },
+  "homepage": "https://gitflow-ai.com"
+}

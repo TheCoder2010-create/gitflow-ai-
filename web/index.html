@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFlow AI - Simplify Your Git Workflow with AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">GitFlow AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#docs">Docs</a>
+                <button class="btn-secondary">Sign In</button>
+                <button class="btn-primary">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" style="top: 20%; left: 10%;"></div>
+                <div class="floating-element" style="top: 60%; right: 15%;"></div>
+                <div class="floating-element" style="bottom: 30%; left: 20%;"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Simplify Your Git Workflow<br>
+                <span class="gradient-text">with GitFlow AI</span>
+            </h1>
+            <p class="hero-subtitle">
+                Transform your Git experience with AI-powered assistance. Get intelligent commit messages, 
+                workflow suggestions, and seamless repository management - all in natural language.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary large" onclick="startTrial()">Start Free Trial</button>
+                <button class="btn-secondary large" onclick="watchDemo()">Watch Demo</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Preview -->
+        <div class="dashboard-preview">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="terminal-title">GitFlow AI Terminal</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">gitflow ask "How do I merge my feature branch safely?"</span>
+                    </div>
+                    <div class="terminal-response">
+                        <span class="ai-icon">🤖</span>
+                        <span>I'll help you merge safely. First, let me check your branch status...</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">gitflow commit</span>
+                    </div>
+                    <div class="terminal-response">
+                        <span class="ai-icon">🤖</span>
+                        <span>Generated commit: "feat: implement user authentication with JWT tokens"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose GitFlow AI</h2>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI-Powered Git Conversations</h3>
+                    <p>Ask questions in natural language and get intelligent Git command suggestions tailored to your repository state.</p>
+                    <div class="feature-demo">
+                        <div class="demo-chat">
+                            <div class="chat-message user">
+                                <span>How do I undo my last commit but keep changes?</span>
+                            </div>
+                            <div class="chat-message ai">
+                                <span>🤖 Use: git reset --soft HEAD~1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Smart Commit Message Generation</h3>
+                    <p>AI analyzes your code changes and generates meaningful, conventional commit messages automatically.</p>
+                    <div class="feature-demo">
+                        <div class="commit-preview">
+                            <div class="commit-type">feat:</div>
+                            <div class="commit-message">implement user authentication with JWT tokens</div>
+                            <div class="commit-details">
+                                <span>• Added login/logout endpoints</span>
+                                <span>• Implemented JWT middleware</span>
+                                <span>• Added user session management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Workflow Intelligence</h3>
+                    <p>Automatically detects your Git workflow (GitFlow, GitHub Flow) and provides context-aware suggestions.</p>
+                    <div class="feature-demo">
+                        <div class="workflow-diagram">
+                            <div class="branch main">main</div>
+                            <div class="branch feature">feature/auth</div>
+                            <div class="merge-suggestion">
+                                <span>🤖 Ready to merge? I suggest creating a PR first.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety-First Operations</h3>
+                    <p>AI validates commands before execution, preventing destructive operations and suggesting safer alternatives.</p>
+                    <div class="feature-demo">
+                        <div class="safety-alert">
+                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-message">
+                                <strong>Safety Check:</strong> This will delete uncommitted changes. 
+                                <br>Suggest: git stash instead?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>AI-Enhanced Pull Requests</h3>
+                    <p>Generate comprehensive PR descriptions with change summaries, impact analysis, and reviewer suggestions.</p>
+                    <div class="feature-demo">
+                        <div class="pr-preview">
+                            <div class="pr-title">feat: Add user authentication system</div>
+                            <div class="pr-description">
+                                <p><strong>Changes:</strong></p>
+                                <ul>
+                                    <li>✅ JWT authentication</li>
+                                    <li>✅ User session management</li>
+                                    <li>✅ Password hashing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast Setup</h3>
+                    <p>Get started in seconds with our CLI tool. No complex configuration - just install and start asking questions.</p>
+                    <div class="feature-demo">
+                        <div class="setup-steps">
+                            <div class="step">1. npm install -g gitflow-ai</div>
+                            <div class="step">2. gitflow init</div>
+                            <div class="step">3. gitflow ask "help me get started"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Unlock the Power of GitFlow AI</h2>
+                <p>Join thousands of developers who've transformed their Git workflow with AI assistance.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large">Start Free Trial</button>
+                    <button class="btn-secondary large">Schedule Demo</button>
+                </div>
+                <div class="cta-features">
+                    <span>✅ 14-day free trial</span>
+                    <span>✅ No credit card required</span>
+                    <span>✅ Cancel anytime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">GitFlow AI</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#docs">Documentation</a>
+                    <a href="#support">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitFlow AI. Built for the OpenAI Hackathon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Demo Modal -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDemo()">&times;</span>
+            <h2>🎬 GitFlow AI Demo</h2>
+            <div class="demo-video">
+                <div class="video-placeholder">
+                    <div class="play-button">▶️</div>
+                    <p>Interactive Demo Coming Soon!</p>
+                    <p>See GitFlow AI in action with real Git repositories</p>
+                </div>
+            </div>
+            <div class="demo-features">
+                <h3>What you'll see:</h3>
+                <ul>
+                    <li>✅ Natural language Git commands</li>
+                    <li>✅ AI-generated commit messages</li>
+                    <li>✅ Smart workflow suggestions</li>
+                    <li>✅ Safety validations in action</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

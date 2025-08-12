@@ -1,0 +1,15 @@
+# Intelligent Git Workflow Assistant Configuration
+
+model:
+  name: "microsoft/DialoGPT-small"  # Small model for testing
+  cache_dir: "./models"
+  max_length: 512
+  temperature: 0.7
+
+git:
+  default_branch: "main"
+  conventional_commits: true
+  
+assistant:
+  max_context_length: 2048
+  response_timeout: 30
